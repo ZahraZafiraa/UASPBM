@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#7B8DE8</color>
+    <color name="primary_blue_dark">#6A7BDF</color>
+    <color name="background_light">#F5F7FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_light">#E8ECFF</color>
+    <color name="card_background">#F9FAFB</color>
+    <color name="border_light">#E5E7EB</color>
+    <color name="header_color">#7B68EE</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="hint_color">#AAAAAA</color>
+    <color name="button_color">#7B68EE</color>
+    <color name="button_disabled">#CCCCCC</color>
+    <color name="border_color">#E0E0E0</color>
+    <color name="status_available">#4CAF50</color>
+    <color name="status_unavailable">#F44336</color>
+    <color name="status_ordered">#FF9800</color>
+
+    <!-- Bottom Navigation Colors -->
+    <color name="bottom_nav_selected">#FFFFFF</color>
+    <color name="bottom_nav_unselected">#B8C5F2</color>
+</resources>

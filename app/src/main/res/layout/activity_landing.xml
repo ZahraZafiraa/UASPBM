@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FF"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di\nLiteraShare!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_ls"
+        android:contentDescription="Logo LiteraShare"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sirkulasi Buku Bekas untuk\nPendidikan Berkelanjutan"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#222"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berbagi buku, berbagi ilmu.\n Kurangi limbah, tingkatkan literasi."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#444"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="MASUK"
+        android:backgroundTint="#A8BFFF"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_primary" />
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR AKUN BARU"
+        android:textColor="#571B7E"
+        android:background="@drawable/button_outline" />
+</LinearLayout>

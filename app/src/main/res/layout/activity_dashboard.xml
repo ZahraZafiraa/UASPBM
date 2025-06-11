@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FF">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#7B8DE8"
+        android:paddingHorizontal="16dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Menu" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LiteraShare"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_user_profile"
+            android:background="@drawable/bg_circle_white"
+            android:padding="6dp"
+            android:contentDescription="Profile" />
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/bottom_navigation"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Welcome Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selamat datang, user!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#5070CE"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Stats Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_stats_container"
+                android:padding="16dp"
+                android:layout_marginBottom="32dp"
+                android:elevation="3dp"
+                android:baselineAligned="false">
+
+                <!-- Buku Didonasikan -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_stat_item"
+                    android:padding="12dp"
+                    android:layout_marginEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_donation"
+                        android:layout_marginBottom="8dp"
+                        android:contentDescription="Donation icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="buku didonasikan"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <!-- Buku Dipesan -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_stat_item"
+                    android:padding="12dp"
+                    android:layout_marginHorizontal="4dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_book_ordered"
+                        android:layout_marginBottom="8dp"
+                        android:contentDescription="Book ordered icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="buku dipesan"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <!-- Total Kontribusi -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bg_stat_item"
+                    android:padding="12dp"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_activities"
+                        android:layout_marginBottom="8dp"
+                        android:contentDescription="Activities icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="total kontribusi"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Features Section Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fitur apa sih yang ada di\nLiteraShare?"
+                android:textStyle="italic"
+                android:textColor="#7B8DE8"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingMultiplier="1.2" />
+
+            <!-- Features Grid -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- First Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:baselineAligned="false">
+
+                    <!-- Donasi Buku -->
+                    <LinearLayout
+                        android:id="@+id/btn_donasi_buku"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="130dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_feature_card"
+                        android:padding="16dp"
+                        android:layout_marginEnd="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_plus"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="Add book icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Donasi Buku"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Donasi bukumu untuk dibagikan!"
+                            android:textSize="10sp"
+                            android:textColor="#E8ECFF"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.2" />
+                    </LinearLayout>
+
+                    <!-- Cari Buku -->
+                    <LinearLayout
+                        android:id="@+id/btn_cari_buku"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="130dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_feature_card"
+                        android:padding="16dp"
+                        android:layout_marginStart="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_search"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="Search icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cari Buku"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Temukan buku yang kamu inginkan!"
+                            android:textSize="10sp"
+                            android:textColor="#E8ECFF"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Second Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <!-- Buku Saya -->
+                    <LinearLayout
+                        android:id="@+id/btn_buku_saya"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="130dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_feature_card"
+                        android:padding="16dp"
+                        android:layout_marginEnd="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_my_books"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="My books icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buku Saya"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pantau buku yang anda donasikan atau pesan"
+                            android:textSize="10sp"
+                            android:textColor="#E8ECFF"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.2" />
+                    </LinearLayout>
+
+                    <!-- Jejak Kontribusi -->
+                    <LinearLayout
+                        android:id="@+id/btn_jejak_kontribusi"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="130dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_feature_card"
+                        android:padding="16dp"
+                        android:layout_marginStart="6dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_contribution_track"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="Contribution track icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jejak Kontribusi"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat perkembangan kontribusimu"
+                            android:textSize="10sp"
+                            android:textColor="#E8ECFF"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7B8DE8"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/bottom_nav_selector"
+        app:itemTextColor="@color/bottom_nav_selector"
+        app:labelVisibilityMode="auto" />
+
+</RelativeLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_gradient"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_literashare_logo"
+                android:tint="@android:color/white"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LiteraShare"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_profile"
+            android:tint="@android:color/white" />
+
+    </RelativeLayout>
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_book_blue"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buku Saya"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <!-- Tab Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/tab_background"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tab_donasi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Donasi Saya"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/tab_selected"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tab_pesanan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pesanan Saya"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Books List -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Book Item 1: Sejarah Indonesia -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/book_sejarah_indonesia"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/book_cover_rounded" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sejarah Indonesia"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15 Mei 2025"
+                                android:textSize="12sp"
+                                android:textColor="#666666"
+                                android:layout_marginTop="4dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terverifikasi"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/status_terverifikasi"
+                            android:padding="6dp"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Book Item 2: Laskar Pelangi -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/book_laskar_pelangi"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/book_cover_rounded" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Laskar Pelangi"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ditulis oleh: Anak Sari"
+                                android:textSize="12sp"
+                                android:textColor="#666666"
+                                android:layout_marginTop="2dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15 Mei 2025"
+                                android:textSize="12sp"
+                                android:textColor="#666666"
+                                android:layout_marginTop="4dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sudah dikirim"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/status_dikirim"
+                            android:padding="6dp"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Book Item 3: Gelap-Terang Hidup Kartini -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/book_kartini"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/book_cover_rounded" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gelap-Terang Hidup Kartini"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15 Mei 2025"
+                                android:textSize="12sp"
+                                android:textColor="#666666"
+                                android:layout_marginTop="4dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Menunggu Verifikasi"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/status_menunggu"
+                            android:padding="6dp"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_gradient">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home"
+                android:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                android:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_add"
+                android:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_library"
+                android:tint="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

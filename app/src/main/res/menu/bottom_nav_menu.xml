@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search_nav"
+        android:title="Cari" />
+    <item
+        android:id="@+id/nav_books"
+        android:icon="@drawable/ic_books_nav"
+        android:title="Buku" />
+    <item
+        android:id="@+id/nav_stats"
+        android:icon="@drawable/ic_stats_nav"
+        android:title="Statistik" />
+</menu>

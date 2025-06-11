@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiteraShare</string>
+
+    <!-- Donasi Buku -->
+    <string name="donasi_buku">Donasi Buku</string>
+    <string name="judul_buku">Judul Buku</string>
+    <string name="penulis">Penulis</string>
+    <string name="kategori">Kategori</string>
+    <string name="deskripsi_ringkas">Deskripsi Ringkas</string>
+    <string name="titik_penjemputan">Titik Penjemputan</string>
+    <string name="upload_foto">Upload Foto</string>
+    <string name="kirim_donasi">KIRIM DONASI</string>
+    <string name="hint_judul">isi judul buku</string>
+    <string name="hint_penulis">isi nama penulis</string>
+    <string name="hint_deskripsi">isi deskripsi kondisi buku</string>
+    <string name="pilih_kategori">pilih kategori</string>
+    <string name="donasi_subtitle">Yuk! Donasikan minimal 5\nBuku &amp; dapatkan Badge Jejak\nLiterasi Peranggu!</string>
+
+    <!-- Detail Buku -->
+    <string name="detail_buku">Detail buku</string>
+    <string name="halaman">Halaman</string>
+    <string name="status">Status</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="pesan_buku">PESAN BUKU</string>
+    <string name="tidak_tersedia">TIDAK TERSEDIA</string>
+    <string name="tersedia">Tersedia</string>
+    <string name="dipesan">Dipesan</string>
+    <string name="dipinjam">Dipinjam</string>
+
+    <!-- Sample book data -->
+    <string name="sample_book_title">Laskar Pelangi</string>
+    <string name="sample_book_author">Andrea Hirata</string>
+    <string name="sample_kategori">Fiksi</string>
+    <string name="sample_halaman">529</string>
+    <string name="sample_deskripsi">Buku dalam kondisi cukup baik. Sampul terdapat sedikit bekas lipatan, namun halaman dalam utuh, tidak robek, dan dapat dibaca dengan jelas. Tidak terdapat coretan atau noda pada isi buku.</string>
+
+    <!-- Messages -->
+    <string name="pesanan_berhasil">Pesanan berhasil dibuat!</string>
+    <string name="pilih_lokasi">Pilih lokasi penjemputan</string>
+    <string name="upload_foto_buku">Upload foto buku</string>
+    <string name="donasi_berhasil">Donasi berhasil dikirim!</string>
+    <string name="field_required">Field ini harus diisi</string>
+    <string name="pilih_kategori_error">Silakan pilih kategori buku</string>
+
+</resources>

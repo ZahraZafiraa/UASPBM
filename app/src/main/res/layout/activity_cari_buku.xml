@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FF">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#805070CE"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="LiteraShare"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profile" />
+    </LinearLayout>
+
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="619dp"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Apa Buku Pilihanmu Hari Ini?"
+            android:textAlignment="center"
+            android:textColor="#7D8FD8"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rounded"
+            android:drawableStart="@drawable/ic_filter"
+            android:drawableEnd="@drawable/ic_search"
+            android:hint="Cari judul atau penulis..."
+            android:padding="8dp" />
+
+        <!-- RecyclerView daftar buku -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_nav"
+            android:layout_below="@+id/search_box"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#665070CE"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#CC5070CE">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_book" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_donasi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_pesanbuku" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
