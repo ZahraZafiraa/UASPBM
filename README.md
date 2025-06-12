@@ -39,7 +39,7 @@ Meningkatkan akses terhadap buku bekas berkualitas, memperpanjang umur pakai buk
 
 ## 👩‍💻 Developer
 - Nama: **Zahra Zafira**
-- NPM: ***2208107010040**
+- NPM: **2208107010040**
 - Proyek UAS - Mata Kuliah *Pemrograman Berbasis Mobile (PBM)*
 
 ---
